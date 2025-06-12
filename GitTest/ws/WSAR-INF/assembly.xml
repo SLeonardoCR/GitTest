@@ -11,9 +11,11 @@
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
  
 	<cc:assembly id="WorkdayAssembly" version="2025.11">
-        <cc:workday-in id="StartHere">
+        <cc:workday-in id="StartHere" routes-to="CallSubRoutine">
             <cc:integration-system name="GitTest"/>
         </cc:workday-in>
+        <cc:local-in id="GetAPIRequest"/>
+        <cc:local-out id="CallSubRoutine" store-message="none" endpoint="vm://GitTest/GetAPIRequest"/>
 	</cc:assembly>
 
 </beans>
