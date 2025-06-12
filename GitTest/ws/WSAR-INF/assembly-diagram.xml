@@ -21,4 +21,5 @@
   <swimlanes x="159" y="322" name="Swimlane">
     <elements href="assembly.xml#GetAPIRequest"/>
   </swimlanes>
+  <swimlanes x="447" y="367" name="cola"/>
 </wdnm:Diagram>
